@@ -6,9 +6,7 @@
 *View the markdown version for better formatting at:*   
 *https://github.com/keyule/3001-Task4/blob/master/Report/report.md* 
 
-### Task 4 - Pub-Sub Messaging
-
-#### Set up the cluster 
+### Task 4 - Pub-Sub Messaging with Kafka
 
 1. Start the kafka cluster using docker compose
 
