@@ -1,16 +1,16 @@
 # TIC3001 Task 4 
 - Name: Ke Yule
 - Student Number: A0211495H E0493826
-- Github: 
+- Github: https://github.com/keyule/3001-Task4
 
 *View the markdown version for better formatting at:*   
-** 
+*https://github.com/keyule/3001-Task4/blob/master/Report/report.md* 
 
 ### Task 4 - Pub-Sub Messaging
 
 #### Set up the cluster 
 
-1. Start the kafka cluster using docker compoes
+1. Start the kafka cluster using docker compose
 
    ```
    # docker-compose.yml provided in appendix cause length
@@ -47,7 +47,7 @@
    docker-compose exec kafka-1 kafka-topics --describe --topic test-topic --bootstrap-server kafka-1:9092
    ```
 
-   >![Show Leader]()
+   >![Show Leader](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/leader.png?raw=true)
 
 7. Kill the leader
 
@@ -61,7 +61,7 @@
    docker-compose exec kafka-1 kafka-topics --describe --topic test-topic --bootstrap-server kafka-1:9092
    ```
 
-   >![Show Leader Change]()
+   >![Show Leader Change](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/leaderChange.png?raw=true)
 
 9. Check if topic still exists and we still can receive msgs 
 
@@ -71,7 +71,7 @@
    docker-compose exec kafka-3 kafka-console-consumer --topic test-topic --from-beginning --bootstrap-server kafka-3:9094
    ```
 
-   >![Show still can get msgs]()
+   >![Show still can get msgs](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/stillWorking.png?raw=true)
 
 ### Appendix
 #### docker-compose.yml
